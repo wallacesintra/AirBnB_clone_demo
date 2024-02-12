@@ -9,5 +9,5 @@ Cmd class provides a simple framework for writing line-oriented command interpre
 
 UUID - Universal Unique Identifier
 -----------------------------------
-128 bit
+128 bit__init__.py
 
