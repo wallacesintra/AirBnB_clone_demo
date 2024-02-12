@@ -2,13 +2,6 @@
 import cmd
 ### This is a simple example of a command line interface using the cmd module
 
-def multiply(line):
-    arr = line.split()
-    product = 0
-
-    for i in arr:
-        product *= int(i)
-    return product
 
 class HelloWorld(cmd.Cmd):
     """Simple command processor example."""
@@ -19,10 +12,8 @@ class HelloWorld(cmd.Cmd):
         else:
             print("Hi ")
 
-    def do_multiply(self, line):
-        product = multiply(line)
-        print(product)
 
+   
     def do_add(self, line):
         """Add numbers together"""
         arr = line.split()
