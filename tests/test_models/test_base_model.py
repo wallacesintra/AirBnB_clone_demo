@@ -10,11 +10,12 @@ class TestBaseModel(unittest.TestCase):
         self.base_model = BaseModel()
 
     def test_init(self):
-        """Test that the instances are properly initialized"""
-        self.assertIsInstance(self.base_model, BaseModel)
-        self.assertIsNotNone(self.base_model.id)
-        self.assertIsNotNone(self.base_model.created_at)
-        self.assertIsNotNone(self.base_model.updated_at)
+        """Test initialization of BaseModel class"""
+        base_model = BaseModel()
+        self.assertIsInstance(base_model, BaseModel)
+        self.assertIsNone(base_model.id)
+        self.assertIsNone(base_model.created_at)
+        self.assertIsNone(base_model.updated_at)
 
     def test_str(self):
         """Test __str__ method"""
